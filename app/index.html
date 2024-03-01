@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/titlebar.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Pytio</title>
+  </head>
+
+  <body>
+    <div id="titlebar">
+      <!-- Titlebar -->
+      <div id="drag-region">
+        <button id="side-button"><i class="fa-regular fa-bars"></i></button>
+        <div id="window-title">Pytio</div>
+      </div>
+
+      <div id="window-controls">
+        <button id="min-button"><i class="fa-regular fa-minus"></i></button>
+        <button id="max-button">
+          <i class="fa-regular fa-square-small"></i>
+        </button>
+        <button id="close-button"><i class="fa-regular fa-xmark"></i></button>
+      </div>
+    </div>
+
+    <div id="side-bar" class="side-bar">
+      <!-- Sidebar -->
+      <nav class="nav-buttons">
+        <a href="index.html" class="nav-button selected">
+          <i class="fa-regular fa-house"></i>
+        </a>
+
+        <a href="coding-tasks.html" class="nav-button">
+          <i class="fa-solid fa-code"></i>
+        </a>
+
+        <a href="tasks.html" class="nav-button">
+          <i class="fa-regular fa-clipboard-list"></i>
+        </a>
+
+        <a href="settings.html" class="nav-button">
+          <i class="fa-regular fa-gear"></i>
+        </a>
+      </nav>
+    </div>
+
+    <section class="main-page">
+      <!-- Main Page -->
+      <div class="main-btns-content">
+        <a id="main-btn">
+          <p id="welcome-user"></p>
+          <span
+            >Pytio, the best companion for tasks and notes! <br />
+            Simplify your life and stay organized effortlessly. <br />
+            From jotting down quick reminders to managing complex projects.
+            Experience seamless organization and productivity like never
+            before.</span
+          >
+          <h1>Made by Project PYT</h1>
+        </a>
+
+        <div id="two-main-btns">
+          <a href="settings.html">
+            <div class="btn-detail">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <p>Settings</p>
+          </a>
+
+          <div>
+            <div class="btn-detail">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <p>To start experience click three lines in top left corner</p>
+          </div>
+
+          <span>
+            <div class="btn-detail">Version</div>
+            <p>1.0.22</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/titlebar.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/titlebar.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/coding-tasks.css" />
+    <title>Pytio</title>
+  </head>
+
+  <body>
+    <div id="titlebar">
+      <!-- Titlebar -->
+      <div id="drag-region">
+        <button id="side-button"><i class="fa-regular fa-bars"></i></button>
+        <div id="window-title">Pytio</div>
+      </div>
+      <div id="window-controls">
+        <button id="min-button"><i class="fa-regular fa-minus"></i></button>
+        <button id="max-button">
+          <i class="fa-regular fa-square-small"></i>
+        </button>
+        <button id="close-button"><i class="fa-regular fa-xmark"></i></button>
+      </div>
+    </div>
+
+    <div id="side-bar" class="side-bar">
+      <!-- Sidebar -->
+      <nav class="nav-buttons">
+        <a href="index.html" class="nav-button">
+          <i class="fa-regular fa-house"></i>
+        </a>
+
+        <a href="coding-tasks.html" class="nav-button selected">
+          <i class="fa-solid fa-code"></i>
+        </a>
+
+        <a href="tasks.html" class="nav-button">
+          <i class="fa-regular fa-clipboard-list"></i>
+        </a>
+
+        <a href="settings.html" class="nav-button"
+          ><i class="fa-regular fa-gear"></i
+        ></a>
+      </nav>
+    </div>
+
+    <section class="coding-tasks-page">
+      <!-- Coding Tasks Page -->
+      <div class="title-area">
+        <p><i class="fa-solid fa-code"></i> Coding Tasks</p>
+        <div id="add-task-content">
+          <div id="task-area" class="task-area">
+            <button onclick="addTask()" class="fa-solid fa-plus"></button>
+          </div>
+
+          <div class="info-area">
+            <button
+              onclick="openInfoContent()"
+              class="fa-regular fa-clipboard-question"
+            ></button>
+            <div id="info-content">
+              <div class="info-title">
+                <button
+                  onclick="closeInfoContent()"
+                  class="fa-regular fa-xmark"
+                ></button>
+              </div>
+              <div class="info">
+                <h1>Welcome in Coding Task page !</h1>
+                <p>
+                  To create your first task, click the plus icon above the line.
+                </p>
+                <h1>Create your first mini task !</h1>
+                <p>
+                  After entering and confirming the task name, you should see
+                  three labels named IDEAS, TESTING, RELEASED.
+                </p>
+                <p>
+                  In each label section you can create a new task, which you can
+                  drag to another section if you want to change the status of
+                  your mini task.
+                </p>
+                <h1>Edit, add to favorite and delete !</h1>
+                <p>
+                  You can also edit the task name by double-clicking the task
+                  above the line, add tasks to your favorites by clicking the
+                  star icon and delete a task by clicking the trash icon next to
+                  the star.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line">
+        <hr />
+      </div>
+
+      <div id="main-area" class="main-area">
+        <!-- Main Task Area -->
+        <div class="main-task-area">
+          <div id="ideas-area" class="taskTask-area">
+            <div class="taskTask-title-area">
+              <div id="ideas-title">
+                <i class="fa-regular fa-lightbulb"></i>IDEAS
+              </div>
+              <div id="ideas-number">0</div>
+            </div>
+            <div id="ideas-tasks-area" class="taskTask-tasks-area">
+              <button onclick="addIdeasTask()">
+                <i class="fa-solid fa-plus"></i>New
+              </button>
+            </div>
+          </div>
+          <div id="testing-area" class="taskTask-area">
+            <div class="taskTask-title-area">
+              <div id="testing-title">
+                <i class="fa-solid fa-magnifying-glass"></i>TESTING
+              </div>
+              <div id="testing-number">0</div>
+            </div>
+            <div id="testing-tasks-area" class="taskTask-tasks-area">
+              <button onclick="addTestingTask()">
+                <i class="fa-solid fa-plus"></i>New
+              </button>
+            </div>
+          </div>
+          <div id="released-area" class="taskTask-area">
+            <div class="taskTask-title-area">
+              <div id="released-title">
+                <i class="fa-solid fa-check"></i>RELEASED
+              </div>
+              <div id="released-number">0</div>
+            </div>
+            <div id="released-tasks-area" class="taskTask-tasks-area">
+              <button onclick="addReleasedTask()">
+                <i class="fa-solid fa-plus"></i>New
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Task Buttons -->
+        <div class="main-task-btns-area">
+          <button id="star-btn" onclick="addTaskToFavorite()">
+            <i class="fa-solid fa-star"></i>
+          </button>
+          <button id="trash-btn" onclick="deleteTaskName()">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/titlebar.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/coding-tasks.js"></script>
+  </body>
+</html>

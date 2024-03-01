@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  background-color: #191d26;
+  overflow: hidden;
+}
+
+#titlebar {
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #14171f;
+  color: #f0f1f5;
+  user-select: none;
+}
+
+#drag-region {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drag-region button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  margin: 0.2rem;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #f0f1f5;
+}
+
+#drag-region button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-app-region: no-drag;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+#drag-region button i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#window-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+}
+
+#window-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-app-region: no-drag;
+  height: 2rem;
+}
+
+#window-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  -webkit-app-region: no-drag;
+  width: 2.5rem;
+  height: 100%;
+  transition: 0.2s;
+  font-weight: 600;
+  color: #f0f1f5;
+}
+
+#min-button {
+  font-size: 1rem;
+}
+
+#min-button:hover {
+  background-color: #282f3e;
+}
+
+#max-button {
+  font-size: 1rem;
+}
+
+#max-button:hover {
+  background-color: #282f3e;
+}
+
+#close-button {
+  font-size: 1rem;
+}
+
+#close-button:hover {
+  background-color: rgba(255, 50, 0, 0.8);
+}
