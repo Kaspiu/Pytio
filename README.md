@@ -9,7 +9,7 @@ Pytio is the best companion for tasks and notes! Simplify your life and stay org
 
 ## Download
 
-- [Download Pytio](https://drive.google.com/file/d/14adgYD7sBSlQKotwbsULJvaLkasnKV-U/view?usp=sharing)
+- [Download Pytio](https://drive.google.com/file/d/1kSnnA9eZWPZjzOFIzOj5KhiNaow9-3Cu/view?usp=sharing)
 
 ## Authors
 
